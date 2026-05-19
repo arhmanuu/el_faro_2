@@ -8,10 +8,10 @@
             <div class="column is-4">
                 <h5 class="title is-5 has-text-white">Secciones</h5>
                 <ul>
-                    <li><a href="index.php" class="has-text-link">Inicio</a></li>
-                    <li><a href="deportes.php" class="has-text-link">Deportes</a></li>
-                    <li><a href="negocios.php" class="has-text-link">Negocios</a></li>
-                    <li><a href="views/contacto.php" class="has-text-link">contacto</a></li>
+                    <li><a href="<?= BASE_URL ?>/index.php" class="has-text-link">Inicio</a></li>
+                    <li><a href="<?= BASE_URL ?>/deportes.php" class="has-text-link">Deportes</a></li>
+                    <li><a href="<?= BASE_URL ?>/negocios.php" class="has-text-link">Negocios</a></li>
+                    <li><a href="<?= BASE_URL ?>/views/contacto.php" class="has-text-link">Contacto</a></li>
                 </ul>
             </div>
             <div class="column is-4">

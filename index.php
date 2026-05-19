@@ -1,4 +1,10 @@
-<?php include 'views/layout/header.php'; ?>
+<?php 
+// 1. Cargar la configuración global
+require_once 'config.php'; 
+
+// 2. Incluir componentes usando la ruta absoluta interna
+include ROOT_PATH . '/views/layout/header.php'; 
+?>
     <main class="section">
         <div class="container">
             <h2 class="title is-3">Portada de Hoy</h2>
@@ -76,7 +82,7 @@
                         <p class="subtitle is-6 mb-3">Virus azota nuevamente el continente asiático.</p>
                         <figure class="image is-21by9">
                             <video controls style="border-radius: 8px; object-fit: cover;">
-                                <source src="src/video_noticia.mp4" type="video/mp4">
+                                <source src="<?= BASE_URL ?>/src/video_noticia.mp4" type="video/mp4">
                                 Tu navegador no soporta el formato de video.
                             </video>
                         </figure>
@@ -89,7 +95,7 @@
                         <p class="subtitle is-6 mb-3">Análisis: Impacto económico en la región.</p>
                         <div class="content has-text-centered mt-5">
                             <audio controls style="width: 100%;">
-                                <source src="src/audio_noticia.mp3" type="audio/mpeg">
+                                <source src="<?= BASE_URL ?>/src/audio_noticia.mp3" type="audio/mpeg">
                                 Tu navegador no soporta el formato de audio.
                             </audio>
                         </div>
@@ -101,4 +107,7 @@
             </div>
         </div>
     </main>
-<?php include 'views/layout/footer.php'; ?>
+<?php 
+// 3. Incluir el cierre usando la ruta absoluta interna
+include ROOT_PATH . '/views/layout/footer.php'; 
+?>

@@ -1,4 +1,10 @@
-<?php include 'views/layout/header.php'; ?>
+<?php 
+// 1. Cargar la configuración global
+require_once 'config.php'; 
+
+// 2. Incluir componentes usando la ruta absoluta interna
+include ROOT_PATH . '/views/layout/header.php'; 
+?>
     <div class="notification is-link is-light has-text-centered is-marginless p-2 is-radiusless">
         <strong>DEPORTES:</strong> Se abren las inscripciones para la Maratón Solidaria 2026.
     </div>
@@ -45,4 +51,7 @@
 
         </div>
     </main>
-<?php include 'views/layout/footer.php'; ?>
+<?php 
+// 3. Incluir el cierre usando la ruta absoluta interna
+include ROOT_PATH . '/views/layout/footer.php'; 
+?>

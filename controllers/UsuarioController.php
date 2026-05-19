@@ -1,5 +1,9 @@
 <?php
-require_once '../models/Usuario.php';
+// 1. Cargar el entorno (sube un nivel a la raíz)
+require_once '../config.php';
+
+// 2. Importar el modelo usando la ruta absoluta segura del servidor
+require_once ROOT_PATH . '/models/Usuario.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Recibir datos del formulario
@@ -10,8 +14,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Instanciar la clase (POO)
     $objUsuario = new Usuario($nombre, $email, $pass);
     
-    // Ejecutar acción y enviar respuesta a la Vista
+    // Ejecutar acción y enviar respuesta a la Vista de forma absoluta
     $resultado = $objUsuario->registrarLector();
-    include '../views/resultado_transaccion.php';
+    
+    include ROOT_PATH . '/views/resultado_transaccion.php';
 }
 ?>

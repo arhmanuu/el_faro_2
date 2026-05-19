@@ -15,8 +15,8 @@
     <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-item" href="/el_faro/index.php">
-                    <img src="/el_faro/src/logo_referencia.png" alt="Logo El Faro" style="max-height: 70px;">
+                <a class="navbar-item" href="<?= BASE_URL ?>/index.php">
+                    <img src="<?= BASE_URL ?>/src/logo_referencia.png" alt="Logo El Faro" style="max-height: 70px;">
                     <span class="ml-3 is-size-4 has-text-weight-bold">EL FARO</span>
                 </a>
 
@@ -31,10 +31,10 @@
 
             <div class="navbar-menu">
                 <div class="navbar-start">
-                    <a class="navbar-item" href="/el_faro/index.php">Inicio</a>
-                    <a class="navbar-item" href="/el_faro/deportes.php">Deportes</a>
-                    <a class="navbar-item" href="/el_faro/negocios.php">Negocios</a>
-                    <a class="navbar-item" href="/el_faro/views/contacto.php">contacto</a>
+                    <a class="navbar-item" href="<?= BASE_URL ?>/index.php">Inicio</a>
+                    <a class="navbar-item" href="<?= BASE_URL ?>/deportes.php">Deportes</a>
+                    <a class="navbar-item" href="<?= BASE_URL ?>/negocios.php">Negocios</a>
+                    <a class="navbar-item" href="<?= BASE_URL ?>/views/contacto.php">contacto</a>
                 </div>
             </div>
         </div>
